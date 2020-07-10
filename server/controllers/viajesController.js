@@ -15,14 +15,11 @@ exports.viajesController = async (req, res) => {
 };
 
 exports.viajeController = async (req, res) => {
-
-
-    const viaje = await Viaje.findByPk(req.params.id);
+    const viaje = await Viaje.findByPk(req.params.id)
     res.render('viaje',{
         pagina : 'Viaje',
         viaje : viaje
     })
-
 
 };
 
