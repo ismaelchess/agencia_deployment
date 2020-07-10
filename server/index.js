@@ -45,8 +45,8 @@ app.use(bodyparse.urlencoded({extended : true}));
 
 app.use('/',router())
 
-const host = process.env.host || '0.0.0.0';
-const port = process.env.port || 3000;
+const host = process.env.HOST || '0.0.0.0';
+const port = process.env.PORT || 3000;
 
 app.listen(port,host, () =>{
     console.log('El servidor esta levantado');
